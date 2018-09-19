@@ -35,6 +35,7 @@
 		8BEA098C17872CF40060B347 /* sndcoreaudio.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098717872CF40060B347 /* sndcoreaudio.mm */; };
 		8BEA098D17872CF40060B347 /* throttle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BEA098817872CF40060B347 /* throttle.cpp */; };
 		9C4DD2861891E5390075B66C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DD2851891E5390075B66C /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AB86CD2421529C7200128B9C /* iNDS.profdata in Resources */ = {isa = PBXBuildFile; fileRef = CA32245F1CCD4C2400C5BEA7 /* iNDS.profdata */; };
 		AE2F3B6018EF7F5A007A4BA0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE2F3B5E18EF7F5A007A4BA0 /* Localizable.strings */; };
 		BF2AC478177FF0B700D3CF93 /* ArmLJit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC475177FF06600D3CF93 /* ArmLJit.cpp */; };
 		BF9D514317865CD800B5864B /* SndOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF9D514117865CD800B5864B /* SndOut.cpp */; };
@@ -895,6 +896,14 @@
 			name = "App Init";
 			sourceTree = "<group>";
 		};
+		AB86CD2321529B9300128B9C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				8B28306A178DDC7F00E92785 /* iNDSDonationViewController.m */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		AE20890D19163FF700E2CB33 /* i386 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1027,6 +1036,7 @@
 				BFCFE0F11764FBD3000A70CF /* Frameworks */,
 				BFCFE0F01764FBD3000A70CF /* Products */,
 				CA32245E1CCD4C2400C5BEA7 /* OptimizationProfiles */,
+				AB86CD2321529B9300128B9C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1756,6 +1766,11 @@
 				CLASSPREFIX = iNDS;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = iNDS;
+				TargetAttributes = {
+					BFCFE0EE1764FBD3000A70CF = {
+						DevelopmentTeam = UC8SGYRV69;
+					};
+				};
 			};
 			buildConfigurationList = BFCFE0EA1764FBD3000A70CF /* Build configuration list for PBXProject "iNDS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1809,6 +1824,7 @@
 				CAA59B071CAC6C210084AB5D /* bug@2x.png in Resources */,
 				BF9D516917867F7D00B5864B /* ABXYPad@2x.png in Resources */,
 				BF9D516A17867F7D00B5864B /* DPad.png in Resources */,
+				AB86CD2421529C7200128B9C /* iNDS.profdata in Resources */,
 				CA8EBCF31C39BCE50082A3F8 /* Shader.fsh in Resources */,
 				CABE38C21C34B8B800BE8857 /* Folder.png in Resources */,
 				28E7A6EE1787D110003A9C5B /* Defaults.plist in Resources */,
@@ -2143,7 +2159,7 @@
 					"$(SRCROOT)/",
 					"$(SRCROOT)/desmume/src/android",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-DANDROID",
@@ -2197,7 +2213,7 @@
 					"$(SRCROOT)/",
 					"$(SRCROOT)/desmume/src/android",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-DANDROID",
@@ -2229,6 +2245,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
+				DEVELOPMENT_TEAM = UC8SGYRV69;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -2250,7 +2267,7 @@
 					"$(SRCROOT)/desmume/src/android",
 				);
 				INFOPLIST_FILE = "iNDS/support/iNDS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2261,7 +2278,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ApprenticeMediaLLC.iNDS;
+				PRODUCT_BUNDLE_IDENTIFIER = "http---iemulators.com-inds";
 				PRODUCT_NAME = iNDS;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2283,6 +2300,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
+				DEVELOPMENT_TEAM = UC8SGYRV69;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -2304,7 +2322,7 @@
 					"$(SRCROOT)/desmume/src/android",
 				);
 				INFOPLIST_FILE = "iNDS/support/iNDS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2315,7 +2333,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ApprenticeMediaLLC.iNDS;
+				PRODUCT_BUNDLE_IDENTIFIER = "http---iemulators.com-inds";
 				PRODUCT_NAME = iNDS;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
